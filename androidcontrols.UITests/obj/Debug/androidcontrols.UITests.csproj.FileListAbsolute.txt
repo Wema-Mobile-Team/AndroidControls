@@ -1,0 +1,9 @@
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/bin/Debug/androidcontrols.UITests.dll
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/bin/Debug/androidcontrols.UITests.pdb
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/bin/Debug/nunit.framework.dll
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/bin/Debug/nunit.framework.pdb
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/bin/Debug/Xamarin.UITest.dll
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.csproj.CoreCompileInputs.cache
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.csproj.CopyComplete
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.dll
+/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.pdb

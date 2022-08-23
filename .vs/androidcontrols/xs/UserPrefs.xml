@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{5F231C8E-AF5E-4750-872A-763F01D282F5}|Default">
+  <MonoDevelop.Ide.ItemProperties.androidcontrols AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Pixel_4_API_33" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="androidcontrols/MainActivity.cs">
+    <Files>
+      <File FileName="androidcontrols/Resources/layout/show_beneficiaries.xml" Line="58" Column="14" />
+      <File FileName="androidcontrols/BeneficairyActivity.cs" />
+      <File FileName="androidcontrols/MainActivity.cs" Line="17" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="androidcontrols" expanded="True">
+            <Node name="androidcontrols" expanded="True">
+              <Node name="IInterface" expanded="True" />
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

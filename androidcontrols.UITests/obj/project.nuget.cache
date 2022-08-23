@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Nqd7a9HB8bfm20Jq7L/meL61ofgeW/xnaE1rJ2rfW47rsTjNFLpIpj8Aka87n70hMb30ne2hfiedX3FlUDjSA==",
+  "success": true,
+  "projectFilePath": "/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/androidcontrols.UITests.csproj",
+  "expectedPackageFiles": [
+    "/Users/olalekanayodeji/.nuget/packages/nunit/3.12.0/nunit.3.12.0.nupkg.sha512",
+    "/Users/olalekanayodeji/.nuget/packages/xamarin.uitest/3.0.5/xamarin.uitest.3.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+          android:icon="@android:drawable/ic_delete"
+        app:showAsAction="always" />
+        <item
+        android:id="@+id/action_devs"
+        android:orderInCategory="100"
+        android:title="@string/action_devs"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        app:showAsAction="never" />
+</menu>
