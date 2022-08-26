@@ -3,6 +3,17 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "androidcontrols.dll" comes first in this list. */
 		"androidcontrols.dll",
+		"Microsoft.AspNetCore.Http.Abstractions.dll",
+		"Microsoft.AspNetCore.Http.dll",
+		"Microsoft.AspNetCore.Http.Features.dll",
+		"Microsoft.AspNetCore.WebUtilities.dll",
+		"Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+		"Microsoft.Extensions.ObjectPool.dll",
+		"Microsoft.Extensions.Options.dll",
+		"Microsoft.Extensions.Primitives.dll",
+		"Microsoft.Net.Http.Headers.dll",
+		"Newtonsoft.Json.dll",
+		"System.Text.Encodings.Web.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.AppCompat.AppCompatResources.dll",

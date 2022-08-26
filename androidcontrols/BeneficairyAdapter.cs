@@ -10,11 +10,12 @@ namespace androidcontrols
 {
     public class BeneficairyAdapter : RecyclerView.Adapter
     {
-         List<BeneficairyModel> beneficairies;
-         IBeneficiary callback;
+       public  List<BeneficairyModel> beneficairies;
+        public IBeneficiary callback;
+      
         public BeneficairyAdapter(List<BeneficairyModel> _beneficairies, IBeneficiary _callbacks)
         {
-            beneficairies = _beneficairies; callback = _callbacks;
+            beneficairies = _beneficairies; callback = _callbacks; 
         }
 
         public override int ItemCount => beneficairies.Count;
@@ -25,13 +26,32 @@ namespace androidcontrols
             vh.txtAcctNo.Text = beneficairies[position].acctNo;
             vh.txtAccName.Text = beneficairies[position].benName;
             vh.image.SetImageResource(beneficairies[position].mPhotoID);
-          
+            //vh.ItemView.Click += BenClickAction;
+            /*
+             * vh.ItemView.Click += delegate {
+                callbacks.passBeneficiary(_beneficairies[base.AdapterPosition]);
+            };*/
+
+
         }
+
+        /*
+         *   public void BenClickAction(object sender, EventArgs e)
+          {
+              var position = this.recycler.GetChildAdapterPosition((View)sender);
+              BeneficairyModel beneficairy = this.beneficairies[position];
+              callback.passBeneficiary(beneficairy);
+
+          }
+         */
+
+
+
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.show_beneficiaries,parent,false);
-            BeneficairyViewHolder viewHolder = new BeneficairyViewHolder(itemView, beneficairies,callback);
+            BeneficairyViewHolder viewHolder = new BeneficairyViewHolder(itemView,callback, beneficairies);
             return viewHolder;
         }
 
@@ -44,15 +64,15 @@ namespace androidcontrols
             public TextView txtAccName { get; set; }
 
           
-            public BeneficairyViewHolder(View view, List<BeneficairyModel> _beneficairies, IBeneficiary callbacks) :base(view)
+            public BeneficairyViewHolder(View view,IBeneficiary callbacks, List<BeneficairyModel> _beneficairies) :base(view)
             {
                 image = view.FindViewById<AppCompatImageView>(Resource.Id.image_bene);
                 txtAcctNo = view.FindViewById<TextView>(Resource.Id.txt_AcctNo);
                 txtAccName = view.FindViewById<TextView>(Resource.Id.txt_AcctName);
-
-                view.Click += delegate {
-                    callbacks.passBeneficiary(_beneficairies[base.AdapterPosition]);
-                };
+                
+              ItemView.Click += delegate {
+               callbacks.passBeneficiary(_beneficairies[base.AdapterPosition]);
+             };
             }
 
         }

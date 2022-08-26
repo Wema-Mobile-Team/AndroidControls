@@ -7,13 +7,12 @@ using AndroidX.AppCompat.Widget;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
-using System.Collections.Generic;
 using Google.Android.Material.Button;
 using Android.Content;
 
 namespace androidcontrols
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
     public class MainActivity : AppCompatActivity
     {
         private FloatingActionButton fab;
@@ -39,7 +38,9 @@ namespace androidcontrols
             appCompatButton.Click += (o, e) =>
             {
                 Intent intent = new Intent(this, typeof(BeneficairyActivity));
+                //intent.pu
                 StartActivityForResult(intent,100);
+    
             };
 
 
@@ -64,7 +65,7 @@ namespace androidcontrols
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-            if(requestCode == BENNO)
+            if(requestCode == BENNO)// camera
             {
                 if(resultCode == Result.Ok)
                 {
@@ -79,6 +80,7 @@ namespace androidcontrols
                     showMessage("Beneficiary Not Received");
                 }
             }
+           
 
         }
 

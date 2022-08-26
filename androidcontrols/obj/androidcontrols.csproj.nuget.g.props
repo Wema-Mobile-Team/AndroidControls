@@ -18,4 +18,7 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.androidx.migration/1.0.8/buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.migration/1.0.8/buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/Users/olalekanayodeji/.nuget/packages/newtonsoft.json/10.0.1</PkgNewtonsoft_Json>
+  </PropertyGroup>
 </Project>

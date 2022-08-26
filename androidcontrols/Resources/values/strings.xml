@@ -2,5 +2,6 @@
     <string name="app_name">Wema Teams</string>
     <string name="action_settings">Settings</string>
         <string name="action_devs">Developers</string>
+            <string name="error_dev">Hi Devs, kindly try again</string>
 
 </resources>

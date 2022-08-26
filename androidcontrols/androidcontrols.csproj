@@ -67,6 +67,9 @@
     <Compile Include="BeneficairyModel.cs" />
     <Compile Include="BeneficairyAdapter.cs" />
     <Compile Include="IInterface\IBeneficiary.cs" />
+    <Compile Include="DesignActivity.cs" />
+    <Compile Include="AppPreference.cs" />
+    <Compile Include="NetworkUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -115,6 +118,18 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\textinputdesigns.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\account.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\gradient_background.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -124,6 +139,15 @@
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
     <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http">
+      <Version>2.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>10.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

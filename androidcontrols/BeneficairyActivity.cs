@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using androidcontrols.IInterface;
 using AndroidX.RecyclerView.Widget;
+using AndroidX.SwipeRefreshLayout.Widget;
 
 namespace androidcontrols
 {
@@ -21,6 +22,7 @@ namespace androidcontrols
         RecyclerView recyclerView;
         LinearLayoutManager mLayoutManager;
         BeneficairyAdapter adapter;
+        SwipeRefreshLayout swipeRefresh;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             // Create your application here
@@ -31,7 +33,17 @@ namespace androidcontrols
             recyclerView.SetLayoutManager(mLayoutManager);
             adapter = new BeneficairyAdapter(getBeneficiary(),this);
             recyclerView.SetAdapter(adapter);
+            swipeRefresh = FindViewById<SwipeRefreshLayout>(Resource.Id.parent_refresh);
+            swipeRefresh.SetColorSchemeColors(Resource.Color.colorOne, Resource.Color.colorTwo, Resource.Color.colorThree);
+            swipeRefresh.Refresh += RefreshLayout_Refresh;
 
+        }
+
+
+        private void RefreshLayout_Refresh(object sender, EventArgs e)
+        {
+            Thread.Sleep(1000);
+            swipeRefresh.Refreshing = false;
         }
 
         public List<BeneficairyModel> getBeneficiary()
