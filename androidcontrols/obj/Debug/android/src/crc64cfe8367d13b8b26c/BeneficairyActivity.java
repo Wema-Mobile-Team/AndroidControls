@@ -2,7 +2,7 @@ package crc64cfe8367d13b8b26c;
 
 
 public class BeneficairyActivity
-	extends android.app.Activity
+	extends androidx.appcompat.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -21,6 +21,14 @@ public class BeneficairyActivity
 		super ();
 		if (getClass () == BeneficairyActivity.class)
 			mono.android.TypeManager.Activate ("androidcontrols.BeneficairyActivity, androidcontrols", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public BeneficairyActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == BeneficairyActivity.class)
+			mono.android.TypeManager.Activate ("androidcontrols.BeneficairyActivity, androidcontrols", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

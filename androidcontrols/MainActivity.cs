@@ -9,6 +9,7 @@ using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
 using Google.Android.Material.Button;
 using Android.Content;
+using androidcontrols.db;
 
 namespace androidcontrols
 {
@@ -17,7 +18,7 @@ namespace androidcontrols
     {
         private FloatingActionButton fab;
         private const int BENNO = 100;
-
+        AppDatabase db;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,6 +27,11 @@ namespace androidcontrols
             SetContentView(Resource.Layout.activity_main);
 
             Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+        
+
+           
+
+
             SetSupportActionBar(toolbar);
              fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
              fab.Click += FabOnClick;

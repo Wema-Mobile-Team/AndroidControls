@@ -64,12 +64,15 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BeneficairyActivity.cs" />
-    <Compile Include="BeneficairyModel.cs" />
-    <Compile Include="BeneficairyAdapter.cs" />
     <Compile Include="IInterface\IBeneficiary.cs" />
     <Compile Include="DesignActivity.cs" />
-    <Compile Include="AppPreference.cs" />
-    <Compile Include="NetworkUtils.cs" />
+    <Compile Include="utils\NetworkUtils.cs" />
+    <Compile Include="adapters\BeneficairyAdapter.cs" />
+    <Compile Include="utils\AppPreference.cs" />
+    <Compile Include="model\BeneficairyModel.cs" />
+    <Compile Include="model\Post.cs" />
+    <Compile Include="db\AppDatabase.cs" />
+    <Compile Include="AlertDialogFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -130,10 +133,26 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\alertdialog.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_search.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\circle_drawable.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="IInterface\" />
+    <Folder Include="model\" />
+    <Folder Include="utils\" />
+    <Folder Include="adapters\" />
+    <Folder Include="db\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
@@ -147,6 +166,12 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>10.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net">
+      <Version>1.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.8.116</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

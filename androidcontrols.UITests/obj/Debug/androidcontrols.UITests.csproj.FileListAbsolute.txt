@@ -7,4 +7,3 @@
 /Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.csproj.CopyComplete
 /Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.dll
 /Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.pdb
-/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols.UITests/obj/Debug/androidcontrols.UITests.csproj.AssemblyReference.cache

@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{5F231C8E-AF5E-4750-872A-763F01D282F5}|Default">
   <MonoDevelop.Ide.ItemProperties.androidcontrols AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Pixel_4_API_33" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="androidcontrols/DesignActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="androidcontrols/BeneficairyActivity.cs">
     <Files>
-      <File FileName="androidcontrols/DesignActivity.cs" Line="44" Column="21" />
-      <File FileName="androidcontrols/NetworkUtils.cs" Line="26" Column="38" />
-      <File FileName="androidcontrols/MainActivity.cs" Line="43" Column="5" />
+      <File FileName="androidcontrols/Resources/layout/alertdialog.xml" Line="22" Column="38" />
+      <File FileName="androidcontrols/Resources/drawable/circle_drawable.xml" />
+      <File FileName="androidcontrols/BeneficairyActivity.cs" Line="78" Column="72" />
+      <File FileName="androidcontrols/Resources/layout/show_beneficiaries.xml" />
+      <File FileName="androidcontrols/adapters/BeneficairyAdapter.cs" />
+      <File FileName="androidcontrols/Resources/values/styles.xml" />
+      <File FileName="androidcontrols/Properties/AndroidManifest.xml" />
+      <File FileName="androidcontrols/utils/AppPreference.cs" />
+      <File FileName="androidcontrols/utils/NetworkUtils.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="androidcontrols" expanded="True">
             <Node name="androidcontrols" expanded="True">
-              <Node name="DesignActivity.cs" selected="True" />
+              <Node name="Resources" expanded="True" />
+              <Node name="utils" expanded="True" />
+              <Node name="BeneficairyActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -22,8 +30,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="100" column="1" />
-      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="68" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="94" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="58" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="51" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="57" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/db/AppDatabase.cs" relfile="androidcontrols/db/AppDatabase.cs" line="34" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/db/AppDatabase.cs" relfile="androidcontrols/db/AppDatabase.cs" line="46" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="72" column="1" />
+      <Breakpoint file="/Users/olalekanayodeji/AYODEJIWEMABANK/androidcontrols/androidcontrols/DesignActivity.cs" relfile="androidcontrols/DesignActivity.cs" line="74" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
