@@ -100,6 +100,26 @@ namespace androidcontrols.db
                 return null;
             }
         }
+        
+        
+        public bool DeletePost(int userId)
+        {
+            try
+            {
+                using (var connect = new SQLiteConnection(System.IO.Path.Combine(folder, "AppDatabase.db")))
+                {
+
+                     connect.Delete<Post>(userId);
+
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Info("AppDatabase Ex", ex.Message);
+                return false;
+            }
+        }
 
         public AppDatabase()
         {
