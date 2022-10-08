@@ -6,7 +6,7 @@ namespace androidcontrols
 {
     public class NetworkUtils
     {
-        internal static string baseUrl = "https://toprate.toprateresources.com/Account/Authenticate/";
+        internal static string baseUrl = "https://api-test.loosechange.app";
 
         public NetworkUtils()
         {
@@ -19,7 +19,7 @@ namespace androidcontrols
             string result = string.Empty;
             try
             {
-               using (var mClient = new HttpClient() {BaseAddress = new Uri("https://api-test.loosechange.app") })
+               using (var mClient = new HttpClient() {BaseAddress = new Uri(baseUrl) })
                 {
                     mClient.Timeout = TimeSpan.FromMinutes(1);
 
